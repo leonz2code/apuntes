@@ -1,0 +1,741 @@
+-------------------------------------------------------------------
+HTML Documents
+-------------------------------------------------------------------
+
+
+All HTML documents must start with a document type declaration: <!DOCTYPE html>.
+
+The HTML document itself begins with <html> and ends with </html>.
+
+The visible part of the HTML document is between <body> and </body>.
+
+Example
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>My First Heading</h1>
+<p>My first paragraph.</p>
+
+</body>
+
+
+he <!DOCTYPE> Declaration
+The <!DOCTYPE> declaration represents the document type, and helps browsers to display web pages correctly.
+
+It must only appear once, at the top of the page (before any HTML tags).
+
+The <!DOCTYPE> declaration is not case sensitive.
+
+The <!DOCTYPE> declaration for HTML5 is:
+
+<!DOCTYPE html>
+------------------------------------------------------
+HTML Headings
+------------------------------------------------------
+
+
+HTML headings are defined with the <h1> to <h6> tags.
+
+<h1> defines the most important heading. <h6> defines the least important heading: 
+
+Example
+<h1>This is heading 1</h1>
+<h2>This is heading 2</h2>
+<h3>This is heading 3</h3>
+------------------------------------------------------
+HTML Paragraphs
+------------------------------------------------------
+
+HTML paragraphs are defined with the <p> tag:
+
+Example
+<p>This is a paragraph.</p>
+<p>This is another paragraph.</p>
+------------------------------------------------------
+HTML Links
+------------------------------------------------------
+
+HTML links are defined with the <a> tag:
+
+Example
+<a href="https://www.w3schools.com">This is a link</a>
+
+------------------------------------------------------
+HTML Images
+------------------------------------------------------
+
+HTML images are defined with the <img> tag.
+
+The source file (src), alternative text (alt), width, and height are provided as attributes:
+
+Example
+<img src="w3schools.jpg" alt="W3Schools.com" width="104" height="142">
+
+**************************************************
+HTML Elements
+**************************************************
+The HTML element is everything from the start tag to the end tag:
+
+<tagname>Content goes here...</tagname>
+Examples of some HTML elements:
+
+<h1>My First Heading</h1>
+<p>My first paragraph.</p>
+Start tag	Element content	End tag
+<h1>	My First Heading	</h1>
+<p>	My first paragraph.	</p>
+<br>	none	none
+------------------------------------------------
+Nested HTML Elements
+------------------------------------------------
+
+HTML elements can be nested (this means that elements can contain other elements).
+
+All HTML documents consist of nested HTML elements.
+
+The following example contains four HTML elements (<html>, <body>, <h1> and <p>):
+
+Example
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>My First Heading</h1>
+<p>My first paragraph.</p>
+
+</body>
+</html>
+------------------------------------------------
+HTML attributes provide additional information about HTML elements.
+------------------------------------------------
+HTML Attributes
+All HTML elements can have attributes
+Attributes provide additional information about elements
+Attributes are always specified in the start tag
+Attributes usually come in name/value pairs like: name="value"
+The href Attribute
+The <a> tag defines a hyperlink. The href attribute specifies the URL of the page the link goes to:
+
+Example
+<a href="https://www.w3schools.com">Visit W3Schools</a>
+
+The src Attribute
+The <img> tag is used to embed an image in an HTML page. The src attribute specifies the path to the image to be displayed:
+
+Example
+<img src="img_girl.jpg">
+
+There are two ways to specify the URL in the src attribute:
+
+1. Absolute URL - Links to an external image that is hosted on another website. Example: src="https://www.w3schools.com/images/img_girl.jpg".
+
+Notes: External images might be under copyright. If you do not get permission to use it, you may be in violation of copyright laws. In addition, you cannot control external images; it can suddenly be removed or changed.
+
+2. Relative URL - Links to an image that is hosted within the website. Here, the URL does not include the domain name. If the URL begins without a slash, it will be relative to the current page. Example: src="img_girl.jpg". If the URL begins with a slash, it will be relative to the domain. Example: src="/images/img_girl.jpg".
+
+Tip: It is almost always best to use relative URLs. They will not break if you change domain.
+
+The width and height Attributes
+The <img> tag should also contain the width and height attributes, which specify the width and height of the image (in pixels):
+
+Example
+<img src="img_girl.jpg" width="500" height="600">
+
+The alt Attribute
+The required alt attribute for the <img> tag specifies an alternate text for an image, if the image for some reason cannot be displayed. This can be due to a slow connection, or an error in the src attribute, or if the user uses a screen reader.
+
+Example
+<img src="img_girl.jpg" alt="Girl with a jacket">
+
+The style Attribute
+The style attribute is used to add styles to an element, such as color, font, size, and more.
+
+Example
+<p style="color:red;">This is a red paragraph.</p>
+
+The lang Attribute
+You should always include the lang attribute inside the <html> tag, to declare the language of the Web page. This is meant to assist search engines and browsers.
+
+The following example specifies English as the language:
+
+<!DOCTYPE html>
+<html lang="en">
+<body>
+...
+</body>
+</html>
+Country codes can also be added to the language code in the lang attribute. So, the first two characters define the language of the HTML page, and the last two characters define the country.
+
+The following example specifies English as the language and United States as the country:
+
+<!DOCTYPE html>
+<html lang="en-US">
+<body>
+...
+</body>
+</html>
+----------------------------------------------
+The title Attribute
+----------------------------------------------
+
+The title attribute defines some extra information about an element.
+
+The value of the title attribute will be displayed as a tooltip when you mouse over the element:
+
+Example
+<p title="I'm a tooltip">This is a paragraph.</p>
+
+--------------------------------------
+HTML Headings
+--------------------------------------
+
+
+HTML headings are defined with the <h1> to <h6> tags.
+
+<h1> defines the most important heading. <h6> defines the least important heading.
+
+Example
+<h1>Heading 1</h1>
+<h2>Heading 2</h2>
+<h3>Heading 3</h3>
+<h4>Heading 4</h4>
+<h5>Heading 5</h5>
+<h6>Heading 6</h6>
+
+Headings Are Important
+Search engines use the headings to index the structure and content of your web pages.
+
+Users often skim a page by its headings. It is important to use headings to show the document structure.
+
+<h1> headings should be used for main headings, followed by <h2> headings, then the less important <h3>, and so on.
+
+Note: Use HTML headings for headings only. Don't use headings to make text BIG or bold.
+
+Bigger Headings
+Each HTML heading has a default size. However, you can specify the size for any heading with the style attribute, using the CSS font-size property:
+
+Example
+<h1 style="font-size:60px;">Heading 1</h1>
+
+****************************************************************
+HTML Paragraphs
+****************************************************************
+
+The HTML <p> element defines a paragraph.
+
+A paragraph always starts on a new line, and browsers automatically add some white space (a margin) before and after a paragraph.
+
+Example
+<p>This is a paragraph.</p>
+<p>This is another paragraph.</p>
+
+-------------------------------------------------------------
+HTML Display
+-------------------------------------------------------------
+
+You cannot be sure how HTML will be displayed.
+
+Large or small screens, and resized windows will create different results.
+
+With HTML, you cannot change the display by adding extra spaces or extra lines in your HTML code.
+
+The browser will automatically remove any extra spaces and lines when the page is displayed:
+
+Example
+<p>
+This paragraph
+contains a lot of lines
+in the source code,
+but the browser
+ignores it.
+</p>
+
+<p>
+This paragraph
+contains         a lot of spaces
+in the source         code,
+but the        browser
+ignores it.
+</p>
+-----------------------------------------------------------
+HTML Horizontal Rules
+-----------------------------------------------------------
+
+
+The <hr> tag defines a thematic break in an HTML page, and is most often displayed as a horizontal rule.
+
+The <hr> element is used to separate content (or define a change) in an HTML page: pone una linea hombre no nos hagamos bolas
+
+Example
+<h1>This is heading 1</h1>
+<p>This is some text.</p>
+<hr>
+<h2>This is heading 2</h2>
+<p>This is some other text.</p>
+<hr>
+
+he <hr> tag is an empty tag, which means that it has no end tag.
+
+--------------------------------------------------------------
+HTML Line Breaks
+--------------------------------------------------------------
+
+The HTML <br> element defines a line break.
+
+Use <br> if you want a line break (a new line) without starting a new paragraph:
+
+Example
+<p>This is<br>a paragraph<br>with line breaks.</p>
+
+--------------------------------------------------------------
+The Poem Problem
+--------------------------------------------------------------
+
+This poem will display on a single line:
+
+Example
+<p>
+  My Bonnie lies over the ocean.
+
+  My Bonnie lies over the sea.
+
+  My Bonnie lies over the ocean.
+
+  Oh, bring back my Bonnie to me.
+</p>
+
+Solution - The HTML <pre> Element
+-------------------------------------------------------
+The HTML <pre> element defines preformatted text.
+-------------------------------------------------------
+
+The text inside a <pre> element is displayed in a fixed-width font (usually Courier), and it preserves both spaces and line breaks:
+
+Example
+<pre>
+  My Bonnie lies over the ocean.
+
+  My Bonnie lies over the sea.
+
+  My Bonnie lies over the ocean.
+
+  Oh, bring back my Bonnie to me.
+</pre>
+----------------------------------------------------
+HTML Formatting Elements
+----------------------------------------------------
+
+Formatting elements were designed to display special types of text:
+
+<b> - Bold text
+<strong> - Important text
+<i> - Italic text
+<em> - Emphasized text
+<mark> - Marked text
+<small> - Smaller text
+<del> - Deleted text
+<ins> - Inserted text
+<sub> - Subscript text
+<sup> - Superscript text
+
+-----------------------------------------------
+HTML Comment Tag
+-----------------------------------------------
+
+You can add comments to your HTML source by using the following syntax:
+
+<!-- Write your comments here -->
+-----------------------------------------------
+HTML Links - The target Attribute
+-----------------------------------------------
+
+
+By default, the linked page will be displayed in the current browser window. To change this, you must specify another target for the link.
+
+The target attribute specifies where to open the linked document.
+
+The target attribute can have one of the following values:
+
+_self - Default. Opens the document in the same window/tab as it was clicked
+_blank - Opens the document in a new window or tab
+_parent - Opens the document in the parent frame
+_top - Opens the document in the full body of the window
+
+Example
+Use target="_blank" to open the linked document in a new browser window or tab:
+
+<a href="https://www.w3schools.com/" target="_blank">Visit W3Schools!</a>
+
+-------------------------------------------------
+HTML Links - Use an Image as a Link
+-------------------------------------------------
+To use an image as a link, just put the <img> tag inside the <a> tag:
+
+Example
+<a href="default.asp">
+<img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;">
+</a>
+-------------------------------------------------
+Link to an Email Address
+-------------------------------------------------
+
+Use mailto: inside the href attribute to create a link that opens the user's email program (to let them send a new email):
+
+Example
+<a href="mailto:someone@example.com">Send email</a>
+
+----------------------------------------------
+Button as a Link
+--------------------------------------------
+
+To use an HTML button as a link, you have to add some JavaScript code.
+
+JavaScript allows you to specify what happens at certain events, such as a click of a button:
+
+Example
+<button onclick="document.location='default.asp'">HTML Tutorial</button>
+----------------------------------------------------------------
+Link Titles
+----------------------------------------------------------------
+
+The title attribute specifies extra information about an element. The information is most often shown as a tooltip text when the mouse moves over the element.
+
+Example
+<a href="https://www.w3schools.com/html/" title="Go to W3Schools HTML section">Visit our HTML Tutorial</a>
+
+---------------------------------------------------------------------
+HTML Images Syntax
+---------------------------------------------------------------------
+
+The HTML <img> tag is used to embed an image in a web page.
+
+Images are not technically inserted into a web page; images are linked to web pages. The <img> tag creates a holding space for the referenced image.
+
+The <img> tag is empty, it contains attributes only, and does not have a closing tag.
+
+The <img> tag has two required attributes:
+
+src - Specifies the path to the image
+alt - Specifies an alternate text for the image
+Syntax
+<img src="url" alt="alternatetext">
+-------------------------------
+The src Attribute
+-------------------------------
+
+The required src attribute specifies the path (URL) to the image.
+
+Note: When a web page loads, it is the browser, at that moment, that gets the image from a web server and inserts it into the page. Therefore, make sure that the image actually stays in the same spot in relation to the web page, otherwise your visitors will get a broken link icon. The broken link icon and the alt text are shown if the browser cannot find the image.
+
+Example
+<img src="img_chania.jpg" alt="Flowers in Chania">
+---------------------
+The alt Attribute
+---------------------
+The required alt attribute provides an alternate text for an image, if the user for some reason cannot view it (because of slow connection, an error in the src attribute, or if the user uses a screen reader).
+
+The value of the alt attribute should describe the image:
+
+Example
+<img src="img_chania.jpg" alt="Flowers in Chania">
+
+If a browser cannot find an image, it will display the value of the alt attribute:
+
+Example
+<img src="wrongname.gif" alt="Flowers in Chania">
+
+----------------------------------------------------
+Image Size - Width and Height
+----------------------------------------------------
+
+You can use the style attribute to specify the width and height of an image.
+
+Example
+<img src="img_girl.jpg" alt="Girl in a jacket" style="width:500px;height:600px;">
+
+Alternatively, you can use the width and height attributes:
+
+Example
+<img src="img_girl.jpg" alt="Girl in a jacket" width="500" height="600">
+
+---------------------------------------------
+HTML Favicon
+---------------------------------------------
+
+How To Add a Favicon in HTML
+You can use any image you like as your favicon. You can also create your own favicon on sites like https://www.favicon.cc.
+
+Tip: A favicon is a small image, so it should be a simple image with high contrast.
+
+A favicon image is displayed to the left of the page title in the browser tab
+
+To add a favicon to your website, either save your favicon image to the root directory of your webserver, or create a folder in the root directory called images, and save your favicon image in this folder. A common name for a favicon image is "favicon.ico".
+
+Next, add a <link> element to your "index.html" file, after the <title> element, like this:
+
+Example
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Page Title</title>
+  <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+</head>
+<body>
+
+<h1>This is a Heading</h1>
+<p>This is a paragraph.</p>
+
+</body>
+</html>
+Now, save the "index.html" file and reload it in your browser. Your browser tab should now display your favicon image to the left of the page title.
+*****************************************************
+HTML Page Title
+*****************************************************
+
+very web page should have a page title to describe the meaning of the page.
+
+The <title> element adds a title to your page:
+
+Example
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HTML Tutorial</title>
+</head>
+<body>
+
+The content of the document......
+
+</body>
+</html>
+The title is shown in the browser's title bar:
+
+The title should describe the content and the meaning of the page.
+
+The page title is very important for search engine optimization (SEO). The text is used by search engine algorithms to decide the order when listing pages in search results.
+
+The <title> element:
+
+defines a title in the browser toolbar
+provides a title for the page when it is added to favorites
+displays a title for the page in search engine-results
+So, try to make the title as accurate and meaningful as possible!
+
+-------------------------------------------
+HTML Tables
+-------------------------------------------
+
+HTML tables allow web developers to arrange data into rows and columns.
+
+
+Define an HTML Table
+A table in HTML consists of table cells inside rows and columns.
+
+Example
+A simple HTML table:
+
+<table>
+  <tr>
+    <th>Company</th>
+    <th>Contact</th>
+    <th>Country</th>
+  </tr>
+  <tr>
+    <td>Alfreds Futterkiste</td>
+    <td>Maria Anders</td>
+    <td>Germany</td>
+  </tr>
+  <tr>
+    <td>Centro comercial Moctezuma</td>
+    <td>Francisco Chang</td>
+    <td>Mexico</td>
+  </tr>
+</table>
+
+Table Cells
+Each table cell is defined by a <td> and a </td> tag.
+
+td stands for table data.
+
+Everything between <td> and </td> are the content of the table cell.
+
+Example
+<table>
+  <tr>
+    <td>Emil</td>
+    <td>Tobias</td>
+    <td>Linus</td>
+  </tr>
+</table>
+Note: A table cell can contain all sorts of HTML elements: text, images, lists, links, other tables, etc.
+
+Table Rows
+Each table row starts with a <tr> and ends with a </tr> tag.
+
+tr stands for table row.
+
+Example
+<table>
+  <tr>
+    <td>Emil</td>
+    <td>Tobias</td>
+    <td>Linus</td>
+  </tr>
+  <tr>
+    <td>16</td>
+    <td>14</td>
+    <td>10</td>
+  </tr>
+</table>
+You can have as many rows as you like in a table; just make sure that the number of cells are the same in each row.
+
+Note: There are times when a row can have less or more cells than another. You will learn about that in a later chapter.
+
+Table Headers
+Sometimes you want your cells to be table header cells. In those cases use the <th> tag instead of the <td> tag:
+
+th stands for table header.
+
+Example
+Let the first row be table header cells:
+
+<table>
+  <tr>
+    <th>Person 1</th>
+    <th>Person 2</th>
+    <th>Person 3</th>
+  </tr>
+  <tr>
+    <td>Emil</td>
+    <td>Tobias</td>
+    <td>Linus</td>
+  </tr>
+  <tr>
+    <td>16</td>
+    <td>14</td>
+    <td>10</td>
+  </tr>
+</table>
+By default, the text in <th> elements are bold and centered, but you can change that with CSS.
+
+----------------------------------------------------
+Unordered HTML List
+----------------------------------------------------
+An unordered list starts with the <ul> tag. Each list item starts with the <li> tag.
+The list items will be marked with bullets (small black circles) by default:
+Example
+<ul>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>
+----------------------------------------------------
+Ordered HTML List
+----------------------------------------------------
+An ordered list starts with the <ol> tag. Each list item starts with the <li> tag.
+The list items will be marked with numbers by default:
+Example
+<ol>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol>
+----------------------------------------------------
+HTML Description Lists
+----------------------------------------------------
+HTML also supports description lists.
+A description list is a list of terms, with a description of each term.
+The <dl> tag defines the description list, the <dt> tag defines the term (name), and the <dd> tag describes each term:
+Example
+<dl>
+  <dt>Coffee</dt>
+  <dd>- black hot drink</dd>
+  <dt>Milk</dt>
+  <dd>- white cold drink</dd>
+</dl>
+------------------------------------------------
+HTML Block and Inline Elements
+------------------------------------------------
+Every HTML element has a default display value, depending on what type of element it is.
+There are two display values: block and inline.
+Block-level Elements
+A block-level element always starts on a new line, and the browsers automatically add some space (a margin) before and after the element.
+A block-level element always takes up the full width available (stretches out to the left and right as far as it can).
+Two commonly used block elements are: <p> and <div>.
+The <p> element defines a paragraph in an HTML document.
+The <div> element defines a division or a section in an HTML document.
+The <p> element is a block-level element.
+---------------------------------
+Inline Elements
+---------------------------------
+An inline element does not start on a new line.
+An inline element only takes up as much width as necessary.
+This is a <span> element inside a paragraph.
+<!DOCTYPE html>
+<html>
+<body>
+<p>This is an inline span <span style="border: 1px solid black">Hello World</span> element inside a paragraph.</p>
+<p>The SPAN element is an inline element, and will not start on a new line and only takes up as much width as necessary.</p>
+</body>
+</html>
+-----------------------------------
+HTML Iframes
+-----------------------------------
+An HTML iframe is used to display a web page within a web page.
+HTML Iframe Syntax
+The HTML <iframe> tag specifies an inline frame.
+An inline frame is used to embed another document within the current HTML document.
+Syntax
+<iframe src="url" title="description"></iframe>
+Tip: It is a good practice to always include a title attribute for the <iframe>. This is used by screen readers to read out what the content of the iframe is.
+Iframe - Set Height and Width
+Use the height and width attributes to specify the size of the iframe.
+The height and width are specified in pixels by default:
+Example
+<iframe src="demo_iframe.htm" height="200" width="300" title="Iframe Example"></iframe>
+-----------------------------------
+HTML File Paths
+-----------------------------------
+A file path describes the location of a file in a web site's folder structure.
+File Path Examples
+Path Description
+<img src="picture.jpg"> The "picture.jpg" file is located in the same folder as the current page
+<img src="images/picture.jpg"> The "picture.jpg" file is located in the images folder in the current folder
+<img src="/images/picture.jpg"> The "picture.jpg" file is located in the images folder at the root of the current web
+<img src="../picture.jpg"> The "picture.jpg" file is located in the folder one level up from the current folder
+-----------------------------------
+HTML Forms
+-----------------------------------
+An HTML form is used to collect user input. The user input is most often sent to a server for processing.
+The <form> Element
+The HTML <form> element is used to create an HTML form for user input:
+<form>
+.
+form elements
+.
+</form>
+---------------------------------------
+The <input> Element
+---------------------------------------
+The HTML <input> element is the most used form element.
+An <input> element can be displayed in many ways, depending on the type attribute.
+Here are some examples:
+Type Description
+<input type="text"> Displays a single-line text input field
+<input type="radio"> Displays a radio button (for selecting one of many choices)
+<input type="checkbox"> Displays a checkbox (for selecting zero or more of many choices)
+<input type="submit"> Displays a submit button (for submitting the form)
+<input type="button"> Displays a clickable button
+Text Fields
+The <input type="text"> defines a single-line input field for text input.
+Example
+A form with input fields for text:
+<form>
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname">
+</form>
+
+
