@@ -1,0 +1,30 @@
+Semantica entender 
+
+header		div
+nav			div
+section		div
+aside		div
+footer		div
+
+poner nombre a las cajas div para entender mejor el codigo " semantica en mis propias palabras "
+
+selectores elementos en css
+
+elemento "h1" "nav" "header" .... etc
+clase     ".clase" ".article"
+id       "content"
+todos    *        ( se usa para un estilo aplicado a todos los elementos )
+
+
+
+
+
+se pueden combinar con una coma , 
+
+ 
+
+
+
+
+
+
